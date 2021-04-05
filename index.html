@@ -4,6 +4,7 @@
     <title>Reservia</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" />
@@ -11,24 +12,28 @@
   </head>
   <body>
     <header>
+      <div class="header-top-content">
         <img class="header-logo" src="assets/logo/Reservia@3x.png" alt="reservia-logo"/>
         <div class="header-nav">
-          <nav class="header-nav__content">
+          <nav class="headr-nav__content">
             <ul class="header-nav__button">
               <li class="header-nav__sub-button"><a class="header-nav__link" href="#accomodation">hébergements</a></li>
               <li class="header-nav__sub-button"><a class="header-nav__link" href="#activites">Activités</a></li>
-              <li class="header-nav__sub-button"><a class="header-nav__link" href="#register" target="blank">s'inscrire</a></li>
+              <li class="header-nav__sub-button"><a class="header-nav__link-second-categorie" href="#register" target="blank">s'inscrire</a></li>
             </ul>
           </nav>
         </div>
-      <div class="header-text">
-        <h1 class="header-text__main-title">Trouver votre hébergement pour des vacances de reves</h1>
-        <p class="header-text__main-subtitle">En plein centre ville ou en pleine nature</p>
       </div>
-      <div class="users-geographical-location">
-        <i class="fas fa-map-marker-alt"></i>
-        <input class="users-geographical-location__search" type="text" placeholder="Marseille, France" />
-        <button class="users-geographical-location__search">rechercher</button>
+      <div class="header-text">
+        <h1 class="header-text__title">Trouver votre hébergement pour des vacances de rêve</h1>
+        <p class="header-text__subtitle">En plein centre ville ou en pleine nature</p>
+      </div>
+      <div class="users-geographical__bar">
+        <div class="users-geographical-location">
+          <i class="fas fa-map-marker-alt users-geographical-location__icon"></i>
+          <input class="users-geographical-location__search" type="text" placeholder="Marseille, France" />
+          <button class="users-geographical-location__search">rechercher</button>
+        </div>
       </div>
       <div class="users-filter">
         <span>Filtre</span>
@@ -53,7 +58,7 @@
           <span class="filter-slider"/>
         </label>
       </div>
-      <data value="500" class="header-text__information"><i class="fas fa-info-circle"></i>Plus de 500 logements disponnibles dans cette ville</data>
+      <p class="header-text__bottom-content"><i class="fas fa-info-circle"></i>Plus de 500 logements disponnibles dans cette ville</p>
     </header>
     <main>
       <section class="accomodation" id="accomodation">
@@ -182,22 +187,24 @@
       </section>
     </main>
     <footer>
-      <ul class="footer-nav">
-        <li class="footer-nav__button"><h1 class="footer-nav__title">A propos</h1></li>
-        <li class="footer-nav__button"><a class="footer-nav__link" href="" alt="">Fonctionnement du site du site</a></li>
-        <li class="footer-nav__button"><a class="footer-nav__link" href="" alt="">Conditions général de vente</a></li>
-        <li class="footer-nav__button"><a class="footer-nav__link" href="" alt="">Données et Confidentialité</a></li>
-      </ul>
-      <ul class="footer-nav">
-        <li class="footer-nav__button"><h1 class="footer-nav__title">Nos hébèregements</h1></li>
-        <li class="footer-nav__button"><a class="footer-nav__link" href="" alt=""></a>Charte de qualité</a></li>
-        <li class="footer-nav__button"><a class="footer-nav__link" href="" alt=""></a>Soumettre votre hôtel</a></li><!--pourquoi ces liens ne fonctionnent pas comme les autres-->
-      </ul>
-      <ul class="footer-nav">
-        <li class="footer-nav__button"><h1 class="footer-nav__title">Assitance</h1></li>
-        <li class="footer-nav__button"><a class="footer-nav__link" href="" alt="">Centre d'aide</a></li>
-        <li class="footer-nav__button"><a class="footer-nav__link" href="" alt="">Nous contacter</a></li>
-      </ul>
+      <div class="footer-nav__container">
+        <ul class="footer-nav">
+          <li class="footer-nav__button"><h1 class="footer-nav__title">A propos</h1></li>
+          <li class="footer-nav__button"><a class="footer-nav__link" href="" alt="">Fonctionnement du site du site</a></li>
+          <li class="footer-nav__button"><a class="footer-nav__link" href="" alt="">Conditions général de vente</a></li>
+          <li class="footer-nav__button"><a class="footer-nav__link" href="" alt="">Données et Confidentialité</a></li>
+        </ul>
+        <ul class="footer-nav">
+          <li class="footer-nav__button"><h1 class="footer-nav__title">Nos hébèregements</h1></li>
+          <li class="footer-nav__button"><a class="footer-nav__link" href="" alt="">Charte de qualité</a></li>
+          <li class="footer-nav__button"><a class="footer-nav__link" href="" alt="">Soumettre votre hôtel</a></li><!--pourquoi ces liens ne fonctionnent pas comme les autres-->
+        </ul>
+        <ul class="footer-nav">
+          <li class="footer-nav__button"><h1 class="footer-nav__title">Assitance</h1></li>
+          <li class="footer-nav__button"><a class="footer-nav__link" href="" alt="">Centre d'aide</a></li>
+          <li class="footer-nav__button"><a class="footer-nav__link" href="" alt="">Nous contacter</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
