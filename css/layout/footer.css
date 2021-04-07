@@ -1,0 +1,22 @@
+footer {
+  padding: var(--padding-base);
+  display: flex;
+  background-color: var(--background-color);
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+}
+
+.footer-nav__title {
+  line-height: 2.5;
+  font-weight: bold;
+}
+
+.footer-nav__link {
+  line-height: 2;
+  text-decoration: none;
+  color: var(--text-color);
+}

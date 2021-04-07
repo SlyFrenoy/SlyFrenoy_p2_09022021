@@ -1,0 +1,202 @@
+main {
+  padding: var(--padding-base);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "accomodation popular"
+    "activities activities";
+  grid-gap: var(--margin-xs);
+}
+
+/* accomodation */
+:root {
+  --card-width: 200px;
+  --card-height: 200px;
+}
+
+.accomodation {
+  grid-area: accomodation;
+  padding: var(--padding-xs);
+  background-color: var(--background-color);
+}
+
+.accomodation__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: var(--margin-xs);
+}
+
+.accomodation__title {
+}
+
+.accomodation__card {
+  width: 100%;
+  height: 100%;
+}
+
+.accomodation__card__image {
+  width: var(--card-width);
+  height: calc(var(--card-height) * 2 / 3);
+  object-fit: cover;
+}
+
+.accomodation__card__title {
+}
+
+.accomodation__card__price {
+}
+
+.accomodation__card__icons {
+}
+
+.accomodation__card__icons__stars {
+}
+
+.accomodation__card__icons__stars--empty {
+}
+
+/* popular */
+:root {
+  --card-width: 300px;
+  --card-height: 200px;
+}
+
+.popular {
+  grid-area: popular;
+  padding: var(--padding-xs);
+  background-color: var(--background-color);
+}
+
+.popular__content {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: var(--margin-xs);
+}
+
+.popular__title {
+}
+
+.popular__card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.popular__card__image {
+  width: calc(var(--card-width) * 2 / 5);
+  height: var(--card-height);
+  object-fit: cover;
+}
+
+.popular__card__title {
+}
+
+.popular__card__price {
+}
+
+.popular__card__icons {
+}
+
+.popular__card__icons__stars {
+}
+
+.popular__card__icons__stars--empty {
+}
+
+/* activities */
+:root {
+  --card-width: 300px;
+  --card-height-sm: 150px;
+  --card-height: 200px;
+  --card-height-md: 250px;
+  --card-height-lg: 400px;
+}
+
+.activities {
+  grid-area: activities;
+  padding: var(--padding-xs);
+}
+
+.activities__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "cardA cardB cardD cardE"
+    "cardA cardC cardD cardF";
+  grid-gap: var(--margin-xs);
+}
+
+.activities__content :nth-child(1) {
+  grid-area: cardA;
+}
+
+.activities__content :nth-child(1) .activities__card__image {
+  width: var(--card-width);
+  height: var(--card-height-lg);
+  object-fit: cover;
+}
+
+.activities__content :nth-child(2) {
+  grid-area: cardB;
+}
+
+.activities__content :nth-child(2) .activities__card__image {
+  width: var(--card-width);
+  height: var(--card-height-sm);
+  object-fit: cover;
+}
+
+.activities__content :nth-child(3) {
+  grid-area: cardC;
+}
+
+.activities__content :nth-child(3) .activities__card__image {
+  width: var(--card-width);
+  height: var(--card-height-md);
+  object-fit: cover;
+}
+
+.activities__content :nth-child(4) {
+  grid-area: cardD;
+}
+
+.activities__content :nth-child(4) .activities__card__image {
+  width: var(--card-width);
+  height: var(--card-height-lg);
+  object-fit: cover;
+}
+
+.activities__content :nth-child(5) {
+  grid-area: cardE;
+}
+
+.activities__content :nth-child(5) .activities__card__image {
+  width: var(--card-width);
+  height: var(--card-height);
+  object-fit: cover;
+}
+
+.activities__content :nth-child(6) {
+  grid-area: cardF;
+}
+
+.activities__content :nth-child(6) .activities__card__image {
+  width: var(--card-width);
+  height: var(--card-height);
+  object-fit: cover;
+}
+
+.activities_title {
+}
+
+.activities__card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.activities__card__image {
+}
+
+.activities__card__title {
+}

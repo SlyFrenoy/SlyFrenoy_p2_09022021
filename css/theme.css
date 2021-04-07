@@ -1,0 +1,12 @@
+:root {
+  --primary-color: #0065fc;
+  --secondary-color: #deebff;
+  --background-color: #f2f2f2;
+  --text-color: #000000;
+  --padding-xs: 2rem;
+  --padding-base: 3rem;
+  --padding-xl: 6rem;
+  --margin-xs: 2rem;
+  --margin-base: 3rem;
+  --margin-xl: 6rem;
+}
