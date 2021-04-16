@@ -1,79 +1,207 @@
 header {
-  margin: var(--padding-base);
+  margin: 0 var(--padding-base);
 }
 
 .header__title {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
+  padding-top: 1.5rem;
+  padding-bottom: 0.8rem;
+  margin-top: var(--margin-xxs);
 }
 
 .header__subtitle {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
 }
 
 /* header-nav */
 .header-nav {
   display: flex;
   justify-content: space-between;
-}
-
-.header-nav__logo {
+  align-items: center;
 }
 
 .header-nav__container {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav__container__link {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  text-decoration: none;
+  padding: 2rem 1rem;
+  color: var(--text-color);
+}
+
+.header-nav__container__link:hover {
+  color: var(--primary-color);
+  padding-top: 1.8rem;
+  border-top: solid var(--primary-color) 0.2rem;
 }
 
 .header-nav__container__link--active {
+  color: var(--primary-color);
+  padding-top: 1.8rem;
+  border-top: solid var(--primary-color) 0.2rem;
 }
 
+/* TODO: RESET le css sur l'hover */
+
 .header-nav__container__link--button {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.header-nav__container__link--button:hover {
+  color: var(--primary-color);
+  padding-top: 1.8rem;
+  border-top: solid var(--primary-color) 0.2rem;
 }
 
 /* header-search */
 
 .header-search {
   display: flex;
+  height: 3rem;
+}
+
+.header-search__icon__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid var(--background-color) 0.1rem;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+  width: 2.5rem;
+  background-color: var(--background-color);
 }
 
 .header-search__icon {
+  color: var(--text-color);
 }
 
 .header-search__input {
+  display: flex;
+  align-items: stretch;
+  border: solid var(--background-color) 0.1rem;
+  width: 16rem;
+}
+
+.header-search__input::-webkit-input-placeholder {
+  font-weight: 800;
+  color: var(--text-color);
+  padding-left: 1rem;
 }
 
 .header-search__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  border: solid var(--primary-color) 0.1rem;
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+  font-weight: bold;
+  color: white;
 }
 
 /* header-filters */
 
 .header-filters {
   display: flex;
+  align-items: center;
+  margin: var(--margin-xs) 0;
 }
 
 .header-filters__title {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .header-filters__toggle-button {
+  height: 2.5rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: solid var(--background-color) 0.125rem;
+  border-bottom: solid var(--background-color) 0.125rem;
+  border-right: solid var(--background-color) 0.125rem;
+  border-left: none;
+  border-radius: 25px;
+  margin: 0 1.5rem;
 }
 
+.header-filters__toggle-button:hover {
+  background-color: var(--primary-color);
+}
+
+/* .header-filters__toggle-button__icon__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: solid var(--secondary-color) 0.125rem;
+  border-radius: 100%;
+} */
+
 .header-filters__toggle-button__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: solid var(--secondary-color) 0.125rem;
+  border-radius: 100%;
 }
 
 .header-filters__toggle-button__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  padding: 1rem;
 }
 
 /* header-info */
 
 .header-info {
   display: flex;
+  align-items: center;
+  margin-top: var(--margin-xs);
 }
 
-.header-info-icon {
+.header-info__icon__container {
+  display: flex;
+  justify-content: center; /* flex ne repond pas non plus wtf encore */
+  align-items: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--primary-color);
+  border: solid var(--background-color) 0.125rem;
+  border-radius: 100%;
 }
-.header-info-text {
+/*
+.header-info__icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 1.5rem;
+  color: var(--primary-color);
+  border: solid rgb(192, 190, 190) 0.125rem;
+  border-radius: 100%;
+}
+*/
+
+.header-info__text {
+  margin-left: var(--margin-xxs);
+  font-size: 1rem;
+  font-weight: 500;
 }
