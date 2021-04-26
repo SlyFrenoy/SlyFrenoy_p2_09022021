@@ -10,7 +10,6 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/4f8fed3940.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
@@ -23,14 +22,18 @@
           <a class="header-nav__container__link header-nav__container__link--active" href="#accomodation"
             >hébergements</a
           >
-          <a class="header-nav__container__link" href="#activities">Activités</a>
+          <a class="header-nav__container__link header-nav__container__link--activities" href="#activities"
+            >Activités</a
+          >
           <a class="header-nav__container__link header-nav__container__link--button" href="#register" target="_blank"
             >s'inscrire</a
           >
         </nav>
       </div>
-      <h1 class="header__title">Trouver votre hébergement pour des vacances de rêve</h1>
-      <h2 class="header__subtitle">En plein centre ville ou en pleine nature</h2>
+      <div class="header__text__container">
+        <h1 class="header__title">Trouver votre hébergement pour des vacances de rêve</h1>
+        <h2 class="header__subtitle">En plein centre ville ou en pleine nature</h2>
+      </div>
       <div class="header-search">
         <div class="header-search__icon__container">
           <i class="header-search__icon fas fa-map-marker-alt"></i>
@@ -74,23 +77,23 @@
     </header>
     <main>
       <section class="accomodation" id="accomodation">
-        <h1 class="accomodation__title">Hébergements à Marseille</h1>
+        <h2 class="accomodation__title">Hébergements à Marseille</h2>
         <div class="accomodation__content">
           <div class="accomodation__card">
             <img
               class="accomodation__card__image"
               src="assets/hebergements/4_small/auberge-la-cannebiere-small.jpg"
-              alt="auberge-la-cannebiere-small"
+              alt="auberge la cannebière"
             />
             <div class="accomodation__card__information">
-              <h2 class="accomodation__card__title">Auberge de la cannebière</h2>
+              <h3 class="accomodation__card__title">Auberge de la cannebière</h3>
               <p class="accomodation__card__price">Nuit à partir de 25€</p>
               <div class="accomodation__card__icons">
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
-                <i class="accomodation__card__icons accomodation__card__icons__stars--empty fas fa-star"></i>
+                <i class="accomodation__card__icons__stars accomodation__card__icons__stars--empty fas fa-star"></i>
               </div>
             </div>
           </div>
@@ -98,10 +101,10 @@
             <img
               class="accomodation__card__image"
               src="assets/hebergements/4_small/hotel-du-port-small.jpg"
-              alt="hotel-du-port-small"
+              alt="hôtel du port"
             />
             <div class="accomodation__card__information">
-              <h2 class="accomodation__card__title">Hotel du port</h2>
+              <h3 class="accomodation__card__title">Hotel du port</h3>
               <p class="accomodation__card__price">Nuit à partir de 52€</p>
               <div class="accomodation__card__icons">
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
@@ -119,14 +122,14 @@
               alt="hotel-les-mouettes"
             />
             <div class="accomodation__card__information">
-              <h2 class="accomodation__card__title">Hotel les mouettes</h2>
+              <h3 class="accomodation__card__title">Hotel les mouettes</h3>
               <p class="accomodation__card__price">Nuit à partir de 76€</p>
               <div class="accomodation__card__icons">
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
-                <i class="accomodation__card__icons accomodation__card__icons__stars--empty fas fa-star"></i>
+                <i class="accomodation__card__icons__stars accomodation__card__icons__stars--empty fas fa-star"></i>
               </div>
             </div>
           </div>
@@ -134,17 +137,17 @@
             <img
               class="accomodation__card__image"
               src="assets/hebergements/4_small/hotel-de-la-mer.jpg"
-              alt="hotel-de-la-mer"
+              alt="hôtel de la mer"
             />
             <div class="accomodation__card__information">
-              <h2 class="accomodation__card__title">Hotel de la mer</h2>
+              <h3 class="accomodation__card__title">Hôtel de la mer</h3>
               <p class="accomodation__card__price">nuit à partir de 46€</p>
               <div class="accomodation__card__icons">
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
                 <i class="accomodation__card__icons__stars accomodation__card__icons__stars--empty fas fa-star"></i>
-                <i class="accomodation__card__icons accomodation__card__icons__stars--empty fas fa-star"></i>
+                <i class="accomodation__card__icons__stars accomodation__card__icons__stars--empty fas fa-star"></i>
               </div>
             </div>
           </div>
@@ -152,17 +155,17 @@
             <img
               class="accomodation__card__image"
               src="assets/hebergements/4_small/auberge-le-panier.jpg"
-              alt="auberge-le-panier-small"
+              alt="Auberge le panier"
             />
             <div class="accomodation__card__information">
-              <h2 class="accomodation__card__title">Auberge le panier</h2>
+              <h3 class="accomodation__card__title">Auberge le panier</h3>
               <p class="accomodation__card__price">nuit à partir de 23€</p>
               <div class="accomodation__card__icons">
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
-                <i class="accomodation__card__icons accomodation__card__icons__stars--empty fas fa-star"></i>
+                <i class="accomodation__card__icons__stars accomodation__card__icons__stars--empty fas fa-star"></i>
               </div>
             </div>
           </div>
@@ -170,10 +173,10 @@
             <img
               class="accomodation__card__image"
               src="assets/hebergements/4_small/hotel-chez-amina.jpg"
-              alt="hotel-chez-amina"
+              alt="hôtel chez Amina"
             />
             <div class="accomodation__card__information">
-              <h2 class="accomodation__card__title">Hôtel chez Amina</h2>
+              <h3 class="accomodation__card__title">Hôtel chez Amina</h3>
               <p class="accomodation__card__price">Nuit à partir de 96€</p>
               <div class="accomodation__card__icons">
                 <i class="accomodation__card__icons__stars fas fa-star"></i>
@@ -189,19 +192,19 @@
       </section>
       <section class="popular">
         <div class="popular__title">
-          <h1 class="popular__title__text">Les plus populaires</h1>
+          <h2 class="popular__title__text">Les plus populaires</h2>
           <i class="popular__title__icon fas fa-chart-line"></i>
         </div>
-        <div class="popular_section">
+        <div class="popular__section">
           <div class="popular__card">
             <img
               class="popular__card__image"
               src="assets/hebergements/4_small/hotel-soleil-du-matin.jpg"
-              alt="hotel-soleil-du-matin"
+              alt="hôtel soleil du matin"
             />
             <div class="popular__card__informations">
               <div class="popular__card__informations__top-content">
-                <h2 class="popular__card__title">Le soleil du matin</h2>
+                <h3 class="popular__card__title">Hôtel Le soleil du matin</h3>
                 <p class="popular__card__price">Nuit à partir de 128€</p>
               </div>
               <div class="popular__card__icons">
@@ -217,11 +220,11 @@
             <img
               class="popular__card__image"
               src="assets/hebergements/4_small/au-coeur-de-l-eau-chambre-d-hote.jpg"
-              alt="au-coeur-de-l-eau-chambre-d-hote"
+              alt="Au coeur de l'eau chambre d'hôtes"
             />
             <div class="popular__card__informations">
               <div class="popular__card__informations__top-content">
-                <h2 class="popular__card__title">Au coeur de l'eau chambres d'hotes</h2>
+                <h3 class="popular__card__title">Au coeur de l'eau chambres d'hotes</h3>
                 <p class="popular__card__price">Nuit à partir de 71€</p>
               </div>
               <div class="popular__card__icons">
@@ -241,7 +244,7 @@
             />
             <div class="popular__card__informations">
               <div class="popular__card__informations__top-content">
-                <h2 class="popular__card__title">Hôtel tout bleu et blanc</h2>
+                <h3 class="popular__card__title">Hôtel tout bleu et blanc</h3>
                 <p class="popular__card__price">Nuit à partir de 69€</p>
               </div>
               <div class="popular__card__icons">
@@ -256,47 +259,59 @@
         </div>
       </section>
       <section class="activities" id="activities">
-        <h1 class="activities_title">Activités à marseille</h1>
+        <h2 class="activities_title">Activités à marseille</h2>
         <div class="activities__content">
           <div class="activities__card">
-            <img class="activities__card__image" src="assets/activites/4_small/vieux-port.jpg" alt="vieux-port" />
-            <h2 class="activities__card__title">Vieux port</h2>
+            <img class="activities__card__image" src="assets/activites/4_small/vieux-port.jpg" alt="Vieux port" />
+            <div class="activities__card__title__container">
+              <h3 class="activities__card__title">Vieux port</h3>
+            </div>
           </div>
           <div class="activities__card">
             <img
               class="activities__card__image"
               src="assets/activites/4_small/fort-de-pomergues.jpg"
-              alt="fort-de-pomegues"
+              alt="Fort de Pomegues"
             />
-            <h2 class="activities__card__title">Fort de Pomegues</h2>
+            <div class="activities__card__title__container">
+              <h3 class="activities__card__title">Fort de Pomegues</h3>
+            </div>
           </div>
           <div class="activities__card">
             <img
               class="activities__card__image"
               src="assets/activites/4_small/iles-du-frioules.jpg"
-              alt="iles-du-frioules"
+              alt="iles du frioules"
             />
-            <h2 class="activities__card__title">ile de frioulle</h2>
+            <div class="activities__card__title__container">
+              <h3 class="activities__card__title">Ile de frioulle</h3>
+            </div>
           </div>
           <div class="activities__card">
             <img
               class="activities__card__image"
               src="assets/activites/4_small/parc-des-calanques.jpg"
-              alt="parc-des-calanques"
+              alt="Parc des Calanques"
             />
-            <h2 class="activities__card__title">Parc nationnal des Calanques</h2>
+            <div class="activities__card__title__container">
+              <h3 class="activities__card__title">Parc nationnal des Calanques</h3>
+            </div>
           </div>
           <div class="activities__card">
             <img class="activities__card__image" src="assets/activites/4_small/notre-dame.jpg" alt="notre-dame" />
-            <h2 class="activities__card__title">Notre-Dame-De-la-Garde</h2>
+            <div class="activities__card__title__container">
+              <h3 class="activities__card__title">Notre-Dame-De-la-Garde</h3>
+            </div>
           </div>
           <div class="activities__card">
             <img
               class="activities__card__image"
               src="assets/activites/4_small/parc-de-longchamps.jpg"
-              alt="parc-de-longchamps"
+              alt="Parc de Longchamps"
             />
-            <h2 class="activities__card__title">Parc Longchamps</h2>
+            <div class="activities__card__title__container">
+              <h3 class="activities__card__title">Parc Longchamps</h3>
+            </div>
           </div>
         </div>
       </section>
@@ -307,13 +322,13 @@
           <h1 class="footer-nav__title">A propos</h1>
         </li>
         <li>
-          <a class="footer-nav__link" href="" alt="">Fonctionnement du site du site</a>
+          <a class="footer-nav__link" href="#">Fonctionnement du site du site</a>
         </li>
         <li>
-          <a class="footer-nav__link" href="" alt="">Conditions général de vente</a>
+          <a class="footer-nav__link" href="#">Conditions général de vente</a>
         </li>
         <li>
-          <a class="footer-nav__link" href="" alt="">Données et Confidentialité</a>
+          <a class="footer-nav__link" href="#">Données et Confidentialité</a>
         </li>
       </ul>
       <ul class="footer-nav">
@@ -321,10 +336,10 @@
           <h1 class="footer-nav__title">Nos hébèregements</h1>
         </li>
         <li>
-          <a class="footer-nav__link" href="" alt="">Charte de qualité</a>
+          <a class="footer-nav__link" href="#">Charte de qualité</a>
         </li>
         <li>
-          <a class="footer-nav__link" href="" alt="">Soumettre votre hôtel</a>
+          <a class="footer-nav__link" href="#">Soumettre votre hôtel</a>
         </li>
       </ul>
       <ul class="footer-nav">
@@ -332,10 +347,10 @@
           <h1 class="footer-nav__title">Assitance</h1>
         </li>
         <li>
-          <a class="footer-nav__link" href="" alt="">Centre d'aide</a>
+          <a class="footer-nav__link" href="#">Centre d'aide</a>
         </li>
         <li>
-          <a class="footer-nav__link" href="" alt="">Nous contacter</a>
+          <a class="footer-nav__link" href="#">Nous contacter</a>
         </li>
       </ul>
     </footer>
