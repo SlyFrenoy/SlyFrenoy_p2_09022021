@@ -190,12 +190,8 @@ header {
 @media only screen and (min-width: 768px) and (max-width: 1150px) {
   header {
     position: relative;
-    width: 100%;
   }
 
-  .header-nav {
-    margin-right: 5rem;
-  }
   .header__title {
     width: 100%;
   }
@@ -212,12 +208,9 @@ header {
   .header-filters__toggle-button {
     margin: var(--margin-xxs);
   }
-  .header-filters__toggle-button__title {
-    margin: 3rem;
-  }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 767px) {
+@media only screen and (min-width: 426px) and (max-width: 767px) {
   header {
     position: relative;
   }
@@ -253,29 +246,50 @@ header {
   }
 }
 
-@media only screen and (min-width: 319px) and (max-width: 425px) {
+@media only screen and (min-width: 319px) and (max-width: 426px) {
+  header {
+    margin: 0;
+  }
   .header-nav {
     position: relative;
-    left: -3rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    width: 22rem;
     margin-left: 0;
   }
 
   .header-nav__container {
-    background-color: red;
     width: 100%;
     justify-content: space-between;
     margin-top: 5rem;
+    transition: 0.2s border-color linear;
+    border-bottom: solid var(--background-color) 0.2rem;
+  }
+
+  .header-title {
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .header-nav__container__link--button {
     position: absolute;
-    right: 0;
-    top: 2rem;
-    padding: 0;
+    right: var(--margin-xxs);
+    top: 0;
+    border-top: none;
+    transition: 0.2s border-color linear;
+    border-bottom: solid transparent 0.2rem;
+  }
+
+  .header-nav__container__link--active {
+    width: 50%;
+    border-top: none;
+    transition: 0.2s border-color linear;
+    border-bottom: solid var(--primary-color) 0.2rem;
+  }
+
+  .header-nav__container__link--activities {
+    width: 50%;
+    border-top: none;
   }
 
   .header-nav__logo {
@@ -289,6 +303,7 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-left: var(--margin-xxs);
   }
   .header-filters__toggle-button {
     margin: var(--margin-xxs);
@@ -298,5 +313,15 @@ header {
   }
   .header__text__container {
     align-items: flex-start;
+    margin-left: var(--margin-xxs);
+    width: auto;
+  }
+
+  .header-search {
+    margin-left: var(--margin-xxs);
+    margin-right: var(--margin-xxs);
+  }
+  .header-info {
+    margin-left: var(--margin-xxs);
   }
 }
