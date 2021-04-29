@@ -28,7 +28,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--background-color);
-    width: 100%;
+    width: auto;
   }
 
   .footer-nav {
@@ -37,11 +37,11 @@ footer {
     justify-content: center;
     align-items: center;
     width: auto;
-    margin-left: 0;
+    margin-left: var(--margin-base);
   }
 }
 
-@media only screen and (min-width: 319px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   footer {
     padding: var(--padding-xxs);
     display: flex;
@@ -55,7 +55,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: auto;
-    margin-left: 0;
-    width: calc(100% - 2 * var(--margin-base));
+    margin-left: var(--margin-base);
+    width: auto;
   }
 }

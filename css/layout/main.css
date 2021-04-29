@@ -320,21 +320,14 @@ main {
     grid-gap: var(--margin-xs);
   }
 
-  .popular__section {
-    display: flex;
-    flex-direction: row;
-    align-items: space-around;
-  }
-
   .popular__card {
     display: flex;
     flex-direction: column;
-    height: 80%;
   }
 
   .popular__card__image {
     width: 100%;
-    height: var(--card-height);
+    height: calc(var(--card-height) * 1.5);
     object-fit: cover;
     overflow: hidden;
     border-radius: var(--card-radius) var(--card-radius) 0 0;
