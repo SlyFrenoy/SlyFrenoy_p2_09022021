@@ -320,6 +320,11 @@ main {
     grid-gap: var(--margin-xs);
   }
 
+  .popular__section {
+    display: flex;
+    flex-direction: column;
+  }
+
   .popular__card {
     display: flex;
     flex-direction: column;
@@ -327,7 +332,7 @@ main {
 
   .popular__card__image {
     width: 100%;
-    height: calc(var(--card-height) * 1.5);
+    height: var(--card-height);
     object-fit: cover;
     overflow: hidden;
     border-radius: var(--card-radius) var(--card-radius) 0 0;
@@ -402,6 +407,16 @@ main {
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
+  
+  .popular__card__image {
+    width: 100%;
+    height: calc(var(--card-height) * 1.2);
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: var(--card-radius) var(--card-radius) 0 0;
+  }
+
   .popular__section {
     display: flex;
     flex-direction: column;
