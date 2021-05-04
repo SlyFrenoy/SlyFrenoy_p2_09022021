@@ -322,12 +322,13 @@ main {
 
   .popular__section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .popular__card {
     display: flex;
     flex-direction: column;
+    width: 20rem;
   }
 
   .popular__card__image {
@@ -384,7 +385,7 @@ main {
   }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 426px) and (max-width: 767px) {
   body {
     width: 100%;
   }
@@ -408,7 +409,6 @@ main {
     flex-wrap: nowrap;
   }
 
-  
   .popular__card__image {
     width: 100%;
     height: calc(var(--card-height) * 1.2);
